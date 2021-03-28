@@ -1,0 +1,46 @@
+@import "global";
+@import "home";
+@import "projects";
+@import "contact";
+@import "about";
+
+html,
+body {
+  scroll-behavior: smooth;
+  background: #101010;
+
+  button {
+    background-color: $grey;
+    width: 100px;
+  }
+
+
+
+  #home,
+  #projects {
+    min-height: 100vh;
+    background: $main-color;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  #about,
+  #contact {
+    min-height: 100vh;
+    background: $second-color;
+    color: #fff;
+  }
+
+  .heading {
+    display: block;
+    justify-content: left;
+  }
+
+  .border {
+    width: 100px;
+    height: 10px;
+    background: var(--clr);
+    // margin: 10px 70% 10px 67%;
+    border-radius: 7px;
+  }
+}
