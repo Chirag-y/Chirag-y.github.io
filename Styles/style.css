@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=Train+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +15,8 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: #f0f8ff;
+  color: #ddd;
+  font-family: "Playfair Display", serif;
 }
 
 a {
@@ -73,6 +75,9 @@ a {
 .navbar .navigation .nav-list .nav-item {
   font-size: 1.75rem;
   text-transform: uppercase;
+  font-family: 'New Tegomin', serif;
+  color: #fff;
+  font-weight: bold;
 }
 
 .sticky {
@@ -86,6 +91,16 @@ a {
 
 #home .navbar.sticky .navigation .color-theme span ul {
   top: 2.75rem;
+}
+
+#home .navbar.sticky .navigation .color-theme span .fas,
+#home .navbar.sticky .navigation .nav-list .nav-link .nav-item {
+  color: #040817;
+  font-weight: bold;
+}
+
+#home .navbar.sticky .bodymovinanim svg path {
+  stroke: #040817;
 }
 
 .navbar .bodymovinanim {
@@ -117,7 +132,7 @@ a {
 
 path {
   fill-opacity: 1;
-  stroke: white;
+  stroke: #fff;
   z-index: 5;
 }
 
@@ -283,18 +298,22 @@ path {
   }
   #home .container .circle_2 {
     background-color: #f53030;
-    top: 155px;
+    top: 24%;
     left: 55%;
   }
   #home .container .circle_3 {
-    top: 255px;
-    left: 25%;
+    top: 87%;
+    left: 15%;
+    width: 100px;
+    height: 100px;
   }
   #home .container .hero .hero-img {
     width: 80%;
-    height: 200px;
+    height: 250px;
     background-size: cover;
     margin: auto;
+    position: relative;
+    top: -4rem;
   }
 }
 
@@ -340,7 +359,7 @@ path {
 }
 
 #blue {
-  background: #3c40c6;
+  background: #bb86fc;
 }
 
 #red {
@@ -395,6 +414,7 @@ path {
 #projects .container .heading h1 {
   font-size: 56px;
   margin-bottom: 5px;
+  text-transform: uppercase;
 }
 
 #projects .container .project-display {
@@ -545,7 +565,7 @@ path {
   padding: 0 120px;
   width: 100%;
   position: absolute;
-  background-color: #191919;
+  background-color: #040817;
   height: 7vh;
   bottom: 0;
   left: 0;
@@ -558,6 +578,7 @@ path {
   color: rgba(208, 243, 241, 0.7);
   font-size: 20px;
   letter-spacing: 1px;
+  font-family: "New Tegomin", serif;
 }
 
 .contact-section {
@@ -577,6 +598,7 @@ path {
 
 .contact-section h1 {
   font-size: 56px;
+  text-transform: uppercase;
 }
 
 .contact-section .contact-form {
@@ -598,16 +620,18 @@ path {
   background: transparent;
   padding: 15px 25px;
   outline: none;
-  font-size: 20px;
+  font-size: 1rem;
   color: #ddd;
   transition: 0.5s;
   border-radius: 10px;
 }
 
 .contact-section .contact-form-text:placeholder-shown {
-  font-size: 14px;
+  font-size: 1rem;
   font-style: italic;
-  opacity: 0.75;
+  font-family: "New Tegomin", serif;
+  color: #ddd;
+  font-weight: bold;
 }
 
 .contact-section .contact-form-text:focus {
@@ -629,11 +653,12 @@ path {
   margin: 10px auto;
   border: 2.5px solid var(--clr);
   outline: none;
-  background: #333333;
-  color: var(--clr);
+  background: #040817;
+  color: #ddd;
   font-size: 20px;
   padding: 15px 40px;
   border-radius: 4px;
+  font-family: "New Tegomin", serif;
   cursor: pointer;
   transition: 0.5s;
   box-shadow: inset 0 0 0 0 #f58ac2;
@@ -675,6 +700,7 @@ path {
   font-size: 1.5rem;
   line-height: 2rem;
   color: var(--clr);
+  font-family: "New Tegomin", serif;
 }
 
 .contact-section .wrapper .contact-info hr {
@@ -749,6 +775,7 @@ path {
   .contact-section .wrapper .contact-info {
     max-width: 90%;
     width: 80%;
+    margin-top: 1rem;
   }
   .contact-section .wrapper .contact-info hr {
     margin: 10px;
@@ -791,6 +818,7 @@ path {
 
 #about .container .my-self .heading h1 {
   font-size: 56px;
+  text-transform: uppercase;
 }
 
 #about .container .my-self .heading .border {
@@ -817,7 +845,9 @@ path {
 }
 
 #about .container .skills h1 {
+  margin-top: 2rem;
   font-size: 56px;
+  text-transform: uppercase;
 }
 
 #about .container .skills .border {
@@ -915,9 +945,11 @@ path {
     margin-bottom: 10px;
   }
   #about .container .skills .skill-icons .first-set,
-  #about .container .skills .skill-icons .second-set,
-  #about .container .skills .skill-icons .third-set {
+  #about .container .skills .skill-icons .second-set {
     display: flex;
+  }
+  #about .container .skills .skill-icons .second-set {
+    margin-top: 1rem;
   }
   #about .container .skills .skill-icons .fab {
     font-size: 60px;
@@ -945,7 +977,7 @@ html #projects,
 body #home,
 body #projects {
   min-height: 100vh;
-  background: #101010;
+  background: #040817;
   color: #fff;
   overflow-x: hidden;
 }
@@ -955,7 +987,7 @@ html #contact,
 body #about,
 body #contact {
   min-height: 100vh;
-  background: #333333;
+  background: #040817;
   color: #fff;
 }
 

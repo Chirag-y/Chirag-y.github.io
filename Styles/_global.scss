@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=Train+One&display=swap');
+
+// font-family: 'New Tegomin', serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Train One', cursive;
+
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +15,19 @@
 }
 
 $grey: #191919;
-
+$train: 'New Tegomin',
+serif;
+$display:'Playfair Display',
+serif;
 $black: #000;
 
 $primary-color: #5c00c5;
 $theme-color: #8030f5;
-$white: #f0f8ff;
-$main-color: #101010;
-$second-color: #333333;
+$white: #ddd;
+// $white: #f0f8ff;
+$main-color: #040817;
+$second-color: #040817;
+// $second-color: #2B2E4A;
 $header: 30px;
 $tag: 56px;
 
@@ -27,6 +38,7 @@ $tag: 56px;
   list-style: none;
   text-decoration: none;
   color: $white;
+  font-family: $display;
 }
 
 @mixin flex {

@@ -50,6 +50,10 @@
             .nav-item {
                 font-size: 1.75rem;
                 text-transform: uppercase;
+                font-family: 'New Tegomin',
+                    serif;
+                color: #fff;
+                font-weight: bold;
             }
         }
     }
@@ -70,6 +74,15 @@
     top: 2.75rem;
 }
 
+#home .navbar.sticky .navigation .color-theme span .fas,
+#home .navbar.sticky .navigation .nav-list .nav-link .nav-item {
+    color: $main-color;
+    font-weight: bold;
+}
+
+#home .navbar.sticky .bodymovinanim svg path {
+    stroke: $main-color;
+}
 
 
 .navbar .bodymovinanim {
@@ -101,7 +114,7 @@
 
 path {
     fill-opacity: 1;
-    stroke: white;
+    stroke: #fff;
     z-index: 5;
 }
 
@@ -291,21 +304,25 @@ path {
 
     #home .container .circle_2 {
         background-color: #f53030;
-        top: 155px;
+        top: 24%;
         left: 55%;
     }
 
     #home .container .circle_3 {
-        top: 255px;
-        left: 25%;
+        top: 87%;
+        left: 15%;
+        width: 100px;
+        height: 100px;
     }
 
 
     #home .container .hero .hero-img {
         width: 80%;
-        height: 200px;
+        height: 250px;
         background-size: cover;
         margin: auto;
+        position: relative;
+        top: -4rem;
     }
 
 
@@ -356,7 +373,7 @@ path {
 }
 
 #blue {
-    background: #3c40c6;
+    background: #bb86fc;
 }
 
 #red {

@@ -10,7 +10,8 @@
     padding: 0 120px;
     width: 100%;
     position: absolute;
-    background-color: #191919;
+
+    background-color: $main-color;
     height: 7vh;
     bottom: 0;
     left: 0;
@@ -22,6 +23,7 @@
         color: rgba(208, 243, 241, 0.7);
         font-size: 20px;
         letter-spacing: 1px;
+        font-family: $train;
     }
 }
 
@@ -41,6 +43,7 @@
 
     h1 {
         font-size: $tag;
+        text-transform: uppercase;
     }
 
 
@@ -66,16 +69,18 @@
         background: transparent;
         padding: 15px 25px;
         outline: none;
-        font-size: 20px;
+        font-size: 1rem;
         color: #ddd;
         transition: 0.5s;
         border-radius: 10px;
     }
 
     .contact-form-text:placeholder-shown {
-        font-size: 14px;
+        font-size: 1rem;
         font-style: italic;
-        opacity: 0.75;
+        font-family: $train;
+        color: #ddd;
+        font-weight: bold;
     }
 
     .contact-form-text:focus {
@@ -96,11 +101,12 @@
             margin: 10px auto;
             border: 2.5px solid var(--clr);
             outline: none;
-            background: #333333;
-            color: var(--clr);
+            background: $main-color;
+            color: #ddd;
             font-size: 20px;
             padding: 15px 40px;
             border-radius: 4px;
+            font-family: $train;
             cursor: pointer;
             transition: 0.5s;
             box-shadow: inset 0 0 0 0 #f58ac2;
@@ -138,13 +144,14 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
             }
 
             .text {
                 font-size: 1.5rem;
                 line-height: 2rem;
                 color: var(--clr);
-
+                font-family: $train;
             }
 
             hr {
@@ -233,6 +240,7 @@
     .contact-section .wrapper .contact-info {
         max-width: 90%;
         width: 80%;
+        margin-top: 1rem;
     }
 
     .contact-section .wrapper .contact-info hr {

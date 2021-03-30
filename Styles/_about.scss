@@ -16,7 +16,7 @@
 
             h1 {
                 font-size: $tag;
-
+                text-transform: uppercase;
             }
 
             .border {
@@ -44,7 +44,10 @@
         }
 
         h1 {
+            margin-top: 2rem;
             font-size: $tag;
+            // font-family: $train;
+            text-transform: uppercase;
         }
 
         .border {
@@ -151,9 +154,12 @@
     }
 
     #about .container .skills .skill-icons .first-set,
-    #about .container .skills .skill-icons .second-set,
-    #about .container .skills .skill-icons .third-set {
+    #about .container .skills .skill-icons .second-set {
         display: flex;
+    }
+
+    #about .container .skills .skill-icons .second-set {
+        margin-top: 1rem;
     }
 
     #about .container .skills .skill-icons .fab {
